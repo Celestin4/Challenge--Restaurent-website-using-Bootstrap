@@ -18,3 +18,6 @@ if __name__ == '__main__':
 def myadd(x, y):
     return x + y
 print(myadd(3,4)
+print(myadd(73,4)
+print(myadd(3,42)
+      
