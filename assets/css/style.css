@@ -1,10 +1,109 @@
-/*  =================  Global declaration ======================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*  =================  Global styling======================== */
 body {
-    background-color: grey;
-    color: white;
-}
+    font-family: "Open Sans", sans-serif;
+    background: #0c0b09;
+    /* color: #fff; */
+  }
+  
+  a {
+    color: #cda45e;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: #d9ba85;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+  }
+  
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #1a1814;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #1a1814;
+    border-top-color: #cda45e;
+    border-bottom-color: #cda45e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    border: 2px solid #cda45e;
+  }
+  .back-to-top i {
+    font-size: 28px;
+    color: #cda45e;
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: #cda45e;
+    color: #1a1814;
+  }
+  .back-to-top:hover i {
+    color: #444444;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+
+  
