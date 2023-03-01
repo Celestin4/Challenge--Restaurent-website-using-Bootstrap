@@ -832,4 +832,256 @@ section {
       background-attachment: fixed;
     }
   }
-      
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: #1a1814;
+  }
+  .why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+  }
+  .why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .why-us .box:hover {
+    background: #cda45e;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Menu Section
+  --------------------------------------------------------------*/
+  .menu #menu-flters {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    list-style: none;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .menu #menu-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px 10px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 50px;
+    font-family: "Playfair Display", serif;
+  }
+  .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
+    color: #cda45e;
+  }
+  .menu #menu-flters li:last-child {
+    margin-right: 0;
+  }
+  .menu .menu-item {
+    margin-top: 50px;
+  }
+  .menu .menu-img {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+  }
+  .menu .menu-content {
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .menu .menu-content::after {
+    content: "......................................................................" "...................................................................." "....................................................................";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
+    color: #bab3a6;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  .menu .menu-content a {
+    padding-right: 10px;
+    background: #1a1814;
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+  }
+  .menu .menu-content a:hover {
+    color: #cda45e;
+  }
+  .menu .menu-content span {
+    background: #1a1814;
+    position: relative;
+    z-index: 3;
+    padding: 0 10px;
+    font-weight: 600;
+    color: #cda45e;
+  }
+  .menu .menu-ingredients {
+    margin-left: 85px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /*--------------------------------------------------------------
+  # Specials
+  --------------------------------------------------------------*/
+  .specials {
+    overflow: hidden;
+  }
+  .specials .nav-tabs {
+    border: 0;
+  }
+  .specials .nav-link {
+    border: 0;
+    padding: 12px 15px;
+    transition: 0.3s;
+    color: #fff;
+    border-radius: 0;
+    border-right: 2px solid #cda45e;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .specials .nav-link:hover {
+    color: #cda45e;
+  }
+  .specials .nav-link.active {
+    color: #1a1814;
+    background: #cda45e;
+    border-color: #cda45e;
+  }
+  .specials .nav-link:hover {
+    border-color: #cda45e;
+  }
+  .specials .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+  }
+  .specials .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .specials .details p {
+    color: #aaaaaa;
+  }
+  .specials .details p:last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 992px) {
+    .specials .nav-link {
+      border: 0;
+      padding: 15px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.events {
+    background: url(../img/events-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .events::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .events .section-title h2 {
+    color: #fff;
+  }
+  .events .container {
+    position: relative;
+  }
+  @media (min-width: 1024px) {
+    .events {
+      background-attachment: fixed;
+    }
+  }
+  .events .events-carousel {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+  }
+  .events .event-item {
+    color: #fff;
+  }
+  .events .event-item h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #cda45e;
+  }
+  .events .event-item .price {
+    font-size: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .events .event-item .price span {
+    border-bottom: 2px solid #cda45e;
+  }
+  .events .event-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  .events .event-item ul li {
+    padding-bottom: 10px;
+  }
+  .events .event-item ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #cda45e;
+  }
+  .events .event-item p:last-child {
+    margin-bottom: 0;
+  }
+  .events .swiper-pagination {
+    margin-top: 30px;
+    position: relative;
+  }
+  .events .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+  }
+  .events .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #cda45e;
+  }
+
+  
