@@ -7,3 +7,5 @@ This is the project  was intended with building that function in this way.
 This project was under supervision of my mentor UZABAKIRIHO Boniface
 
 email : uzabakirihoboniface@gmail.com
+
+This project has taught me HTML, CSS , JAVASCRIPT and Bootstap as well different plugins.
